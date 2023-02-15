@@ -1,0 +1,70 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.game{
+   
+    width: 700px;
+    height: 220px;
+    border: 2px solid black;
+    margin: auto;
+    
+}
+/*body{
+    position: relative;
+}*/
+
+#ball {
+
+        background-color: blue;
+        height: 60px;
+        width: 55px;
+        border-radius: 50%;
+        position: relative;
+        top: 160px;
+        margin-left: 10px;
+        
+        
+       
+      }
+ .jump{
+    animation: jump 0.9s linear;
+ }
+      @keyframes jump{
+        0%{
+            top: 160px;
+        }
+        
+        50%{
+            top: 30px;
+        }
+        80%{
+            top: 140px;
+        }
+        100%{
+            top: 160px;
+        }
+      }
+     
+ #blockOfGame{
+    background-color: black;
+    width: 40px;
+    height: 50px;
+    position: relative;
+    top: 110px;
+    left: 660px;
+
+   
+    animation: blockOfGameMovement 2s linear infinite ;
+      }
+      @keyframes blockOfGameMovement {
+        0% {
+            left: 660px;
+          }
+          100% {
+            left: 0;
+          }
+      }
+      
